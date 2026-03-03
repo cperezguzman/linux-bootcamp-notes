@@ -1,4 +1,4 @@
-# Notes for Week 1
+# Context
 Technically speaking, Linux is an **Open-Source Operating System**
 
 ## The Kernel vs The OS
@@ -23,3 +23,13 @@ Users can change *anything*. Want a different taskbar ? Change it. Want a system
 
 ### Cost & Security
 Most versions are completely free. Plus, because of how permissions are handled, it is also significantly less "prone" to traditional Windows viruses.
+
+# The Debian Family
+The Debian distribution is upstream (smth like "parent to") Ubuntu. It's a pure open source community project and provides by far the largest and most complete software repository to its users of any Linux distribution.
+
+Ubuntu provides a good compromise between long-term stability and ease of use. Since Ubuntu gets most of its packages from Debian's stable branch, it also has access to a very large software repo.
+
+### Key Facts
+* The Debian family uses the DKG-based APT package manager to install, update, and remove packages in the system.
+* While Ubuntu is built on top of Debian and is GNOME-based under the hood, it differs visually from the interface on standard Debian.
+
