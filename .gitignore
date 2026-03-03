@@ -1,0 +1,25 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Temp / backup files
+*.swp
+*.swo
+*~
+*.tmp
+
+# Common log + output artifacts (generic)
+*.log
+*.tar
+*.tar.gz
+*.zip
+out/
+
+# Secrets
+.env
+*.key
+*.pem
