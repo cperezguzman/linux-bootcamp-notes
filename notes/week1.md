@@ -176,3 +176,32 @@ One **systemd** command (```systemctl```) is used for most basic tasks. While we
   ```
 
 In most cases, the ```.service``` can be omitted. There are many technical differences with older methods that lie beyond the scope of this discussion.
+
+## Linux Filesystem Basics
+### Linux Filesystems
+Linux Filesystems
+Libraries separate books and other media into multiple sections; this organization will depend on the subject matter, audience, media type, and frequency of retrieval. The same concept applies to a filesystem, which is the embodiment of a method of storing and organizing arbitrary collections of data in a human-usable form.
+
+Different types of filesystems supported by Linux:
+* Conventional disk filesystems: ext3, ext4, XFS, Btrfs, JFS, NTFS, vfat, exfat, etc.
+* Flash storage filesystems: ubifs, jffs2, yaffs, etc.
+* Database filesystems
+* Special purpose filesystems: procfs, sysfs, tmpfs, squashfs, debugfs, fuse, etc.
+
+This section will describe the standard filesystem layout shared by most Linux distributions.
+
+### Partitions and Filesystems
+A partition is a  dedicated subsection of physical storage media.  Historically this meant a physically contiguous portion of a hard disk; today’s storage devices can be more complicated, but we still think of a partition as a fixed area to be treated as a whole.
+
+A filesystem is just a method of storing and accessing files.
+
+One can think of a partition as a container in which a filesystem resides. However, in some circumstances, a filesystem can span more than one partition if one uses **symbolic links**, which will be discussed in greater detail later.
+
+| | Windows | Linux |
+| :---: | :---: | :---: |
+| Partition | Disk | ```/dev/sda1 |
+| Filesystem type | NTFS/VFAT | EXT3/EXT4/XFS/BTRFS... |
+| Mounting parameters | DriveLetter | MountPoint |
+| Base folder (where OS is stored) | C:\ | / |
+
+### The Filesystem
