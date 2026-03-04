@@ -213,20 +213,20 @@ Ex:
 If the username is **student**, a USB pen drived labeled FEDORA might end up being found at ```/run/media/student/FEDORA```, and a file ```README.txt``` on that disc would be at ```/run/media/student/FEDORA/README.txt```
 | Directory | What it's for |
 | :---: | :---: |
-| /bin/   | Essential user command binaries |
-| /boot/  | Static files of the boot loader |
-| /dev/   | Device files                    |
-| /etc/   | Host-specific system configuration (Required directories: opt, x11, sgml, xml) |
-| /home/  | User home directories |
-| /lib/   | Essential shared libraries and kernel modules |
-| /media/ | Mount point for removable media |
-| /mnt/   | Moint point for a temporarily mounted filesystems |
-| /opt/   | Add-on application software packages |
-| /sbin/  | System binaries |
-| /srv/   | Data for services provided by this system |
-| /tmp/   | Temporary files |
-| /usr/   | (Multi-)User utilities and applications (Secondary Hierarchy) (Required directories: bin, include, lib, local, sbin, share |
-| /var/   | Variable files |
-| /root/  | Home directory for the roor user |
-| /proc   | Virtual filesystem documenting kernel and process status as text files |
+| ```/bin/```   | Essential user command binaries |
+| ```/boot/```  | Static files of the boot loader |
+| ```/dev/```   | Device files                    |
+| ```/etc/```   | Host-specific system configuration (Required directories: opt, x11, sgml, xml) |
+| ```/home/```  | User home directories |
+| ```/lib/```   | Essential shared libraries and kernel modules |
+| ```/media/``` | Mount point for removable media |
+| ```/mnt/```   | Moint point for a temporarily mounted filesystems |
+| ```/opt/```   | Add-on application software packages |
+| ```/sbin/```  | System binaries |
+| ```/srv/```   | Data for services provided by this system |
+| ```/tmp/```   | Temporary files |
+| ```/usr/```   | (Multi-)User utilities and applications (Secondary Hierarchy) (Required directories: bin, include, lib, local, sbin, share |
+| ```/var/```   | Variable files |
+| ```/root/```  | Home directory for the roor user |
+| ```/proc```   | Virtual filesystem documenting kernel and process status as text files |
 
