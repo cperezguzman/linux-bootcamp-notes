@@ -211,7 +211,8 @@ Linux uses the '/' character to separate paths (as is UNIX unlike Windows, which
 
 Ex:
 If the username is **student**, a USB pen drived labeled FEDORA might end up being found at ```/run/media/student/FEDORA```, and a file ```README.txt``` on that disc would be at ```/run/media/student/FEDORA/README.txt```
-
+| Directory | What it's for |
+| :---: | :---: |
 | /bin/   | Essential user command binaries |
 | /boot/  | Static files of the boot loader |
 | /dev/   | Device files                    |
