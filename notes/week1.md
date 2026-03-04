@@ -199,9 +199,33 @@ One can think of a partition as a container in which a filesystem resides. Howev
 
 | | Windows | Linux |
 | :---: | :---: | :---: |
-| Partition | Disk | ```/dev/sda1 |
+| Partition | Disk1 | ```/dev/sda1``` |
 | Filesystem type | NTFS/VFAT | EXT3/EXT4/XFS/BTRFS... |
 | Mounting parameters | DriveLetter | MountPoint |
 | Base folder (where OS is stored) | C:\ | / |
 
-### The Filesystem
+### The Filesystem Hierarchy Standard
+Linux systems store their important files according to a standard layout: the Filesystem Hierarchy Standard (FHS), which has long been maintained by the Linux Foundation.
+
+Linux uses the '/' character to separate paths (as is UNIX unlike Windows, which uses '\') and does not have drive letters. Multiple drivers and/or partitions are mounted as directories in the single filesystem. Removable media such as USB drives and CDs, and DVDs wil show up as mounted at ```/run/media/yourusername/disklabel``` for recent Linux systems or under ```/media``` for older distributions. 
+
+Ex:
+If the username is **student**, a USB pen drived labeled FEDORA might end up being found at ```/run/media/student/FEDORA```, and a file ```README.txt``` on that disc would be at ```/run/media/student/FEDORA/README.txt```
+
+| /bin/   | Essential user command binaries |
+| /boot/  | Static files of the boot loader |
+| /dev/   | Device files                    |
+| /etc/   | Host-specific system configuration (Required directories: opt, x11, sgml, xml) |
+| /home/  | User home directories |
+| /lib/   | Essential shared libraries and kernel modules |
+| /media/ | Mount point for removable media |
+| /mnt/   | Moint point for a temporarily mounted filesystems |
+| /opt/   | Add-on application software packages |
+| /sbin/  | System binaries |
+| /srv/   | Data for services provided by this system |
+| /tmp/   | Temporary files |
+| /usr/   | (Multi-)User utilities and applications (Secondary Hierarchy) (Required directories: bin, include, lib, local, sbin, share |
+| /var/   | Variable files |
+| /root/  | Home directory for the roor user |
+| /proc   | Virtual filesystem documenting kernel and process status as text files |
+
