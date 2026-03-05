@@ -278,3 +278,23 @@ As previously mentioned, most desktop environments follow a similar structure to
 
 ### System Startup and Logging In and Out
 [WATCH VIDEO AND TAKE NOTES]
+
+### Graphical Desktop Background
+Each Linux distribution comes with its own set of desktop backrounds. You can change the default by choosing a new wallpaper or selecting a custom picture to be set as the desktop background. If you do not want to use an image as the background, you can select a color to be displayed on the desktop instead.
+
+In addition, you can also change the desktop theme, which changes the look and feel of the Linux system. The theme also defines the appearance of application windows.
+
+### Customizing the Desktop Background
+To change the background, you can right-click anywhere on the desktop and choose _Change Background_
+
+### gnome-tweaks
+Most common settings, both personal and system-wide, are to be found by clicking in the upper right=-hand corner, on either a gear or other obvious icon, depending on your Linux distribution.
+
+However, there are many settings which many users would like to modify which are not thereby accessible; the default settings utility is unfortunately rather limited in modern GNOME-based distributions. Unfortunately, the quest for simplicity has actually made it difficult to adapt your system to your tastes and needs.
+
+Fortunately, there is a standard utility, **gnome-tweaks**, which exposes many more setting options. It also permits you to easily install extensions by external parties. Not all Linux distributions install this tool by default, but it is always available (older distributions used the name **gnome-tweak-tool**). You may have to run it by hitting ```Alt-F2``` and then typing in the name.
+
+Some recent distributions have taken most of the functionality out of this tool and placed it in a new one called **gnome-extensions-app**.
+
+### Changing the Theme
+The visual appearance of applications (the buttons, scroll bars, widgets, and other graphical components) are controlled by a **theme**. GNOME comes with a set of different themes which can change the way your applications look.
