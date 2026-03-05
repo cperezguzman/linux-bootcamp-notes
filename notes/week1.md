@@ -298,3 +298,9 @@ Some recent distributions have taken most of the functionality out of this tool 
 
 ### Changing the Theme
 The visual appearance of applications (the buttons, scroll bars, widgets, and other graphical components) are controlled by a **theme**. GNOME comes with a set of different themes which can change the way your applications look.
+
+## Session Management
+### Logging In and Out
+
+
+
