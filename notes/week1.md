@@ -300,7 +300,18 @@ Some recent distributions have taken most of the functionality out of this tool 
 The visual appearance of applications (the buttons, scroll bars, widgets, and other graphical components) are controlled by a **theme**. GNOME comes with a set of different themes which can change the way your applications look.
 
 ## Session Management
-### Logging In and Out
+### Locking the Screen
+It is a good idea to lock the screen to prevent other people from accessing the computer.
 
+_**NOTE:** This does not suspend the computer; all the applications and processes continue to run while the screen is locked._ 
 
+Two ways to lock the screen:
+* Using the graphical interface
+  Clicking the upper-right corner of the desktop, and then clicking the lock icon.
+* Using the keyboard shortcut ```SUPER-L``` (or ```SUPER-Escape```)
+  (The ```SUPER``` key is also known as the ```Windows``` key).
 
+The keyboard lock shortcut can be modified by altering keyboard settings.
+
+### Switching Users
+Linux is a true multi-user OS, allowing more than one user to be simutlaneously logged in.
