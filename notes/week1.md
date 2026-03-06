@@ -369,3 +369,24 @@ A lot of personalized configuration settings do not appear on the settings menus
 Important things that can be done with this tool include selecting a **theme**, configuring **gnome-tweaks**; extensions now have to be configured using a new app called **gnome-extensions-app**. 
 
 ### Setting Resolution and Configuring Multiple Screens
+The user can change the screen resolution using the _Displays_ panel. The switch to the new resolution will be effective when the user clicks _Apply_. 
+
+In most cases, the configuration for multiple displays is set up automatically as one big screen spanning all monitors, using a reasonable guess for screen layout. If the screen layout is not as desired, a check box can turn on mirrored mode, where the display is seen on all monitors. Clicking on a particular monitor images lets you configure the resolution of each one, and whether they make one big screen, or mirror the same video, etc.
+
+_**NOTE:** The user can ascertain their current resolution by typing at the command line:_
+```bash
+student:/temp> $ xdpyinfo | grep dim
+```
+
+### Date and Time Settings
+By default, Linux always uses Coordinated Universal Time (UTC) for its own internal timekeeping. Displayed or stored time values rely on the system time zone setting to get the proper time. UTC is similar to, but more accurate than, Greenwich Mean Time (GMT).
+
+### Network Time Protocol
+The Network Time Protocol (NTP) is the most popular and reliable protocol for setting the local time by consulting established Internet servers. 
+
+Linux distros always come with a working NTP setup, which refers to specific time servers run or relied on by the distros. This means that no setup, beyond "on" or "off", is generally required for network time synchronization.
+
+### Network Configuration
+All Linux distros have network configuration files, but file formats and locations can differ from one distro to another. Hand editing of these files can handle quite complicated setups, but is not very dynamic or easy to learn and use. 
+
+**Network Manager** was developed to make things easier and more uniform across distros. It can list all available networks (both wired and wireless), allow the choice of a wired, wireless, or mobile broadband network, handle passwords, and set up Virtual Private Networks (VPNs). Except for unusual situations, it is generally best to let Network Manager establish your connections and keep track of your settings.
