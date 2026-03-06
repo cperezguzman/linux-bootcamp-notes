@@ -315,3 +315,57 @@ The keyboard lock shortcut can be modified by altering keyboard settings.
 
 ### Switching Users
 Linux is a true multi-user OS, allowing more than one user to be simutlaneously logged in.
+If more than one person uses the system, each person must have their own user account and password.
+
+## Basic Operations
+### File Manager
+Each distribution implements the **Nautilus** (**File Manager**) utility, which is used to navigate the file system.
+
+It can locate files and, when a file is clicked upon, either it will run if it is a program, or an associated application will be launched using the file as data. This is completely familiar to anyone who has used other OSs.
+
+### Home Directories
+By default, files the user saves will be placed in a directory tree starting at the ```/home``` directory. Account creation, whether during system installation or at a later time, when a new user is added, also induces default directories to be created under the user's ```Home``` directory, such as ```Documents```, ```Desktop```, and ```Downloads```.
+
+### Viewing Files
+The File Manager allows the user to view files and directories in more than one way.
+
+The user can switch between the Icons and List formats, either by clicking the familiar icons in the top bar, or pressing ```CTRL-1``` or ```CTRL-2```  respectively.
+
+Another useful option is to show _hidden files_ (sometimes imprecisely called system files), which are usually configuration files that are hidden by default and whose name starts with a dot. To show hidden files, select _Show Hidden Files_ from the menu or press ```CTRL-H```.
+
+### Searching for Files
+The File Manager includes a search tool inside the file browser window.
+* Click _Search_ in the toolbar (to bring up a text box)
+* Enter the key word in the text box. This causes the system to perform a recursive search from the current directory for any file or directory which contains a part of this keyword.
+
+To open the _File Manager_ from the command line, on most systems type ```nautilus```.
+
+The shortcut key to get to the search text box is ```CTRL-F```. To exit the search box view, click the _Search_ button or ```CTRL-F``` again.
+
+Another quick way to access a specific directory is to press ```CTRL-L```, which will give the user a _Location_ text box to type in a path to a directory.
+
+### Editing a File
+The default text editor in GNOME is **gedit**. Although **gedit** is designed as a general-purpose text editor, it offers additional features spell-checking, highlighting, file listings, and statistics.
+
+### Removing a File
+Deleting a file in Nautilus will automatically move the deleted files to the ```.local/share/Trash/files/``` directory (a trash can of sorts) under the user's home directory. There are several ways to delete files and directories using Nautilus.
+1. Select all the files and directories that are to be deleted.
+2. Press ```CTRL-Delete``` on your keyboard, or right-click the file.
+3. Select _Move to Trash_.
+
+To _permanently_ delete a file:
+1. On the left panel inside a Nautilus file browser, right-click on the ```Trash``` directory.
+2. Select _Empty Trash_.
+
+Alternatively, select the file or directory and press ```Shift-Delete```.
+
+As a precaution, the _Home_ directory should never be deleted, as doing so will most likely erase all the GNOME configuration files and possibly prevent the user from logging in. Many personal system and program configurations are stored under the user's home directory.
+
+# System Configuration from the Graphical Interface
+## System, Diplay, Date and Time Settings
+### gnome-tweaks
+A lot of personalized configuration settings do not appear on the settings menus. Instead, the user has to launch a tool called either **gnome-tweaks** (or **gnome-tweaks-tool** on older Linux distros). The user can launch the program by pressing ```Alt-F2``` and typing in the command.
+
+Important things that can be done with this tool include selecting a **theme**, configuring **gnome-tweaks**; extensions now have to be configured using a new app called **gnome-extensions-app**. 
+
+### Setting Resolution and Configuring Multiple Screens
