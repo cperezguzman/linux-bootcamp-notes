@@ -386,7 +386,53 @@ The Network Time Protocol (NTP) is the most popular and reliable protocol for se
 
 Linux distros always come with a working NTP setup, which refers to specific time servers run or relied on by the distros. This means that no setup, beyond "on" or "off", is generally required for network time synchronization.
 
+## Network Manager
 ### Network Configuration
 All Linux distros have network configuration files, but file formats and locations can differ from one distro to another. Hand editing of these files can handle quite complicated setups, but is not very dynamic or easy to learn and use. 
 
 **Network Manager** was developed to make things easier and more uniform across distros. It can list all available networks (both wired and wireless), allow the choice of a wired, wireless, or mobile broadband network, handle passwords, and set up Virtual Private Networks (VPNs). Except for unusual situations, it is generally best to let Network Manager establish your connections and keep track of your settings.
+
+### Wired and Wireless Connections
+Wired connections usually do not require complicated or manual configuration. The hardware interface and signal presence are automatically detected, and then Network Manager sets the actual network settings via Dynamic Host Configuration Protocol (DHCP).
+
+For **static** configurations that do not use DHCP, manual setup can also be done easily through Network Manager. You can also change the Ethernet Media Access Control (MAC) address if your hardware supports it. The MAC address is a unique hexadecimal number of your network card.
+
+## Configuring Wireless Connections
+To configure a wireless network in any recent GNOME-based distribution:
+Click on the upper-right corner of the top panel, which brings up a settings and/or network window. While the exact appearance will depend on the Linux distro and version, it will always be possible to click on a _WI-FI_ submenu, as long as the hardware is present.
+
+### Mobile Broadband and VPN Connections
+The user can set up a mobile broadband connection with Network Manager, which will launch a wizard to set up the connection details for each connection.
+
+Once the configuration is done, the network is configured automatically each time the broadband network is attached.
+
+Network Manager can also manage your VPN connections.
+It supports many VPN technologies, such as native IPSec, Cisco OpenConnect (via either the Cisco client or a native open source client), Microsoft PPTP, and OpenVPN.
+
+### Installing and Updating Software
+Each package in a Linux distro provides one piece of the system, such as the Linux kernel, the **C** compiler, utilities for manipulating text or configuring the network, or for the user's favorite web browsers and email clients.
+
+Packages often depend on each other. For example, since the user's email client can communicate using SSL/TLS, it will depend on a package that provides the ability to encrypt and decrypt SSL and TLS communication and will not install unless that package is also installed at the same time.
+
+All systems have a lower-level utility that handles the details of unpacking a package and putting the pieces in the right places. However, most of the time, you will be working with a higher-level utility that knows how to download and install packages directly from the internet and can manage dependencies and groups for the user. 
+
+### Debian Packaging
+Let's look at the package management for the Debian family system.
+
+**dpkg** is the underlying package manager for these systems. It can install, remove, and build packages. Unlike higher-level package management systems, it does not automatically download and install packages and satisfy their dependencies.
+
+For Debian-based systems, the higher-level package management system is the Advanced Package Tool (APT) system of utilities. Generally, while each distro within the Debian family uses APT, it creates its own interface on top of it (e.g., apt and apt-get, synaptic, gnome-software, Ubuntu Software Center, etc). Although apt repositories are generally compatible with each other, the software they contain generally is not. Therefore, most repositories target a particular distro (like Ubuntu), and often software distributors ship with multiple repositories to support multiple distributions.
+
+### Red Hat Package Manager (RPM)
+RPM is the other package management system popular on Linux distros. It was developed by Red Hat and adopted by a number of other distributions, including Fedora, CentOS, SUSE/openSUSE, Oracle Linux, and others.
+
+The higher-level package manager differs between distros. Red Hat distros historically use RHEL/CentOS, and Fedora uses dnf, while SUSE family distros such as openSUSE also use RPM but use the zypper interface.
+
+### openSUSE's YaST Software Management
+The Yet another Setup Tool (YaST) software manager is similar to other graphical package managers. It is an RPM-based application. The user can add, remove, or update packages using this application very easily. To access the YaST software manager:
+1. Click _Activities_
+2. In the _Search_ box, type "YaST"
+3. Click the YaST icon
+4. Click _Software Management_
+
+The user can also find YaST by clicking on _Applications > Other-YaST_, which is a strange place to put it.
